@@ -238,6 +238,18 @@
   .reviews-cta h4 { font-size: 1.1rem; font-weight: 700; margin-bottom: 0.25rem; color: var(--white); }
   .reviews-cta p { font-size: 0.85rem; color: rgba(255,255,255,0.6); }
 
+  /* ── GALERIA PACIENTES ── */
+  .galeria { padding: 90px 6vw; background: var(--cream); }
+  .galeria .section-label, .galeria .section-title { text-align: center; }
+  .galeria .section-title { margin: 0 auto 0.5rem; }
+  .galeria-sub { text-align: center; color: var(--gray); max-width: 520px; margin: 0 auto 2.6rem; font-size: 1rem; line-height: 1.6; }
+  .galeria-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.4rem; max-width: 1000px; margin: 0 auto; }
+  .galeria-card { position: relative; border-radius: 18px; overflow: hidden; box-shadow: var(--shadow-md); aspect-ratio: 1 / 1; }
+  .galeria-card img { width: 100%; height: 100%; object-fit: cover; transition: transform .5s ease; }
+  .galeria-card:hover img { transform: scale(1.06); }
+  .galeria-card::after { content: '🐾 Paciente DXVet'; position: absolute; left: 0; right: 0; bottom: 0; padding: 1.4rem 1rem 0.9rem; color: #fff; font-size: 0.8rem; font-weight: 700; background: linear-gradient(transparent, rgba(13,34,53,0.8)); opacity: 0; transition: opacity .3s ease; }
+  .galeria-card:hover::after { opacity: 1; }
+
   /* ── CONTACTO ── */
   .contact { padding: 90px 6vw; }
   .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: start; }
@@ -484,6 +496,18 @@
       <p>Tu reseña ayuda a otras familias a encontrar la atención que sus mascotas merecen.</p>
     </div>
     <a href="https://wa.me/524777861705?text=Hola,%20quiero%20dejar%20una%20reseña%20de%20DXVet" target="_blank" class="btn-primary">Dejar reseña en WhatsApp</a>
+  </div>
+</section>
+
+<!-- GALERIA PACIENTES -->
+<section class="galeria" id="pacientes">
+  <p class="section-label">Nuestros pacientes</p>
+  <h2 class="section-title">Las caritas que cuidamos cada día</h2>
+  <p class="galeria-sub">Cada mascota que pasa por DXVet recibe atención cercana y profesional. Estos son algunos de nuestros consentidos. 🐾</p>
+  <div class="galeria-grid">
+    <div class="galeria-card reveal"><img src="paciente1.jpg" alt="Perros pacientes de DXVet"></div>
+    <div class="galeria-card reveal"><img src="paciente2.jpg" alt="Mascotas atendidas en DXVet"></div>
+    <div class="galeria-card reveal"><img src="paciente3.jpg" alt="Perrito en consulta en DXVet"></div>
   </div>
 </section>
 
